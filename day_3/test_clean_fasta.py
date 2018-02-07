@@ -22,7 +22,7 @@ class Test(unittest.TestCase):
         self.assertEqual('AATTGGCC', second_module.complement('TTAACCGG'))
         
     def test_reverse(self):
-        self.assertEqual('TTAA', second_module.reverse('TTAA'))
+        self.assertEqual('TTAA', second_module.reverse('AATT'))
         
     def runTest(self):   
         self.test_clean_fasta()
