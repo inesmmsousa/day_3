@@ -22,9 +22,15 @@ class Test(unittest.TestCase):
         self.assertEqual('AATTGGCC', second_module.complement('TTAACCGG'))
         
     def test_reverse(self):
-        self.assertEqual('TTAA', second_module.reverse('TTA'))
+        self.assertEqual('TTAA', second_module.reverse('TTAA'))
+        
+    def runTest(self):   
+        self.test_clean_fasta()
+        self.test_complement()
+        self.test_reverse()  
         
         
+                 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()
