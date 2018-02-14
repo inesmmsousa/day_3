@@ -5,7 +5,6 @@ Created on 07/02/2018
 '''
 import math
 
-from test.test_getargs2 import LARGE
 
 class Shape(object):
     '''
@@ -62,8 +61,8 @@ class Circle(Shape):
         return 'Circle ->  raio. {}    {}'.format(self.raio, super(Circle, self).__str__())
     
     def __eq__(self, other):
-        return isinstance(other, Circle) and self.radious == other.radious\
-            and super(Circle, self).__eq__(other) 
+     return isinstance(other, Circle) and self.radious == other.radious\
+            and super(Circle, self).__eq__(other)
 
             
 class Triangle(Shape):
@@ -103,11 +102,11 @@ if __name__ == '__main__':
     
     
     shapes = Shapes()
-    shapes.add_shape(Rectangle(10,20,(0,0,0), 'wood'))
-    shapes.add_shape(Rectangle(10,20,(0,0,0), 'wood'))
-    shapes.add_shape(Triangle(10,20,(0,0,0), 'metal'))
-    shapes.add_shape(Circle(10,(0,0,0), 'glass'))
-    shapes.add_shape(Circle(10,(255,0,0), 'glass'))
+    shapes.add_shape(Rectangle(10, 20, (0,0,0), 'wood'))
+    shapes.add_shape(Rectangle(10, 20, (0,0,0), 'wood'))
+    shapes.add_shape(Triangle(10, 20, (0,0,0), 'metal'))
+    shapes.add_shape(Circle(10, (0,0,0), 'glass'))
+    shapes.add_shape(Circle(10, (255,0,0), 'glass'))
     shapes.print_areas()
     
     rect1 = Rectangle(10, 20, (0,0,0), 'wood')
